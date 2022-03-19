@@ -20,11 +20,13 @@ services:
 
   mysql:
     container_name: mysql
-    image: library/mariadb:10.5.13
-    env_file:
-      - Mysql/.env
-    ports:
-      - "13306:3306"
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      - MYSQL_ROOT_PASSWORD=root_pw
+      - MYSQL_USER=arcturus_user
+      - MYSQL_PASSWORD=arcturus_pw
+      - MYSQL_DATABASE=arcturus
     volumes:
       - volume-mysql:/var/lib/mysql
       - ./Mysql/conf.d:/etc/mysql/conf.d
