@@ -23,7 +23,7 @@ services:
     image: mysql:latest
     command: --default-authentication-plugin=mysql_native_password
     environment:
-      - MYSQL_ROOT_PASSWORD=root_pw
+      - MYSQL_ROOT_PASSWORD=arcturus_root_pw
       - MYSQL_USER=arcturus_user
       - MYSQL_PASSWORD=arcturus_pw
       - MYSQL_DATABASE=arcturus
