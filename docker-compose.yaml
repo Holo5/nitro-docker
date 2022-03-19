@@ -12,18 +12,23 @@ services:
       context: Arcturus
     volumes:
       - ./Arcturus-Community:/app
+    depends_on:
+      - mysql
+    networks:
+      nitro:
 
   mysql:
     container_name: mysql
-    networks:
-      roketto:
     image: library/mariadb:10.5.13
     env_file:
-      - .env
-      - .docker/mysql/.env
+      - Mysql/.env
     ports:
       - "13306:3306"
     volumes:
       - volume-mysql:/var/lib/mysql
-      - vol-rkt-mysql-logs:/var/log/mysql
-      - .docker/mysql/etc/mysql/conf.d:/etc/mysql/conf.d
+      - ./Mysql/conf.d:/etc/mysql/conf.d
+    networks:
+      nitro:
+
+networks:
+  nitro:
