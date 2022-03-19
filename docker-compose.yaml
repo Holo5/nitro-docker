@@ -1,0 +1,29 @@
+version: '3.7'
+
+volumes:
+  volume-mysql:
+
+
+services:
+
+  arcturus:
+    container_name: arcturus
+    build:
+      context: Arcturus
+    volumes:
+      - ./Arcturus-Community:/app
+
+  mysql:
+    container_name: mysql
+    networks:
+      roketto:
+    image: library/mariadb:10.5.13
+    env_file:
+      - .env
+      - .docker/mysql/.env
+    ports:
+      - "13306:3306"
+    volumes:
+      - volume-mysql:/var/lib/mysql
+      - vol-rkt-mysql-logs:/var/log/mysql
+      - .docker/mysql/etc/mysql/conf.d:/etc/mysql/conf.d
