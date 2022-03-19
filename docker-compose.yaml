@@ -10,8 +10,9 @@ services:
     container_name: arcturus
     build:
       context: Arcturus
+    entrypoint: ["/bin/sh","/app/Scripts/build.sh"]
     volumes:
-      - ./Arcturus-Community:/app
+      - ./Arcturus:/app
     depends_on:
       - mysql
     networks:
