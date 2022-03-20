@@ -1,6 +1,6 @@
 #!/bin/bash
 
-supervisord -c /etc/supervisord.conf
+supervisord -c /app/Supervisor/supervisord.conf
 
 cd /app/Sources
 mvn package

@@ -14,7 +14,6 @@ services:
     restart: always
     volumes:
       - ./Arcturus:/app
-      - ./Arcturus/Supervisor/supervisord.conf:/etc/supervisord.conf
     depends_on:
       - mysql
     ports:
