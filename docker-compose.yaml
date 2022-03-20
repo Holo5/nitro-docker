@@ -11,10 +11,13 @@ services:
     build:
       context: Arcturus
     entrypoint: ["/bin/sh","/app/Scripts/build.sh"]
+    restart: always
     volumes:
       - ./Arcturus:/app
     depends_on:
       - mysql
+    ports:
+      - 13000:3000
     networks:
       nitro:
 
@@ -22,6 +25,7 @@ services:
     container_name: mysql
     image: mysql:latest
     command: --default-authentication-plugin=mysql_native_password
+    restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=arcturus_root_pw
       - MYSQL_USER=arcturus_user
@@ -30,6 +34,10 @@ services:
     volumes:
       - volume-mysql:/var/lib/mysql
       - ./Mysql/conf.d:/etc/mysql/conf.d
+      - ./Arcturus/Database:/docker-entrypoint-initdb.d
+      - ./Arcturus/Database:/tmp/Database
+    ports:
+      - 13306:3306
     networks:
       nitro:
 

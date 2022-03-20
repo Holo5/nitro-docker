@@ -6,5 +6,6 @@ RUN apk update
 RUN apk add openjdk8
 RUN apk add bash
 RUN apk add maven
+RUN apk add mysql-client
 
-ENTRYPOINT ["tail", "-f", "/dev/null"]
+EXPOSE 3000/tcp
