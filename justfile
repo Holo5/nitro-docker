@@ -9,6 +9,10 @@ install:
 start-all:
   docker-compose up -d
 
+# Open the MySQL console
+mysql:
+  docker exec -it arcturus bash -c "mysql -h mysql -u arcturus_user -parcturus_pw arcturus"
+
 # Restart Arcturus Emulator
 restart-arcturus:
   docker exec arcturus supervisorctl restart arcturus-emulator 
