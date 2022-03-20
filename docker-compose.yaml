@@ -35,7 +35,6 @@ services:
       - volume-mysql:/var/lib/mysql
       - ./Mysql/conf.d:/etc/mysql/conf.d
       - ./Arcturus/Database:/docker-entrypoint-initdb.d
-      - ./Arcturus/Database:/tmp/Database
     ports:
       - 13306:3306
     networks:
