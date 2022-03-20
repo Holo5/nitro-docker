@@ -18,6 +18,8 @@ services:
       - mysql
     ports:
       - 13000:3000
+      - 13001:3001
+      - 13002:2096
     networks:
       nitro:
 
