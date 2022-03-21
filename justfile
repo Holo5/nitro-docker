@@ -1,4 +1,8 @@
-set shell := ["powershell.exe", "-c"]
+set windows-powershell := true
+
+# Desc
+desc:
+  echo "Please, use other recipe to make you nitro dev environment :)"
 
 # Install all easily
 install:
