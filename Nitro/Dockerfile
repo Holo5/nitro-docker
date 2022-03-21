@@ -1,0 +1,2 @@
+FROM nodejs:latest
+
