@@ -10,10 +10,10 @@ services:
     container_name: arcturus
     build:
       context: Arcturus
-    entrypoint: ["/bin/sh","/app/Scripts/build.sh"]
+    entrypoint: ["/bin/sh","/app/scripts/build.sh"]
     restart: always
     volumes:
-      - ./Arcturus:/app
+      - ./emulator/:/app/
     depends_on:
       - mysql
     ports:
@@ -23,14 +23,14 @@ services:
     networks:
       nitro:
 
-  nitro:
-    container_name: nitro
-    build:
-      context: Nitro
-    depends_on:
-      - arcturus
-    networks:
-      nitro:
+  # nitro:
+  #   container_name: nitro
+  #   build:
+  #     context: Nitro
+  #   depends_on:
+  #     - arcturus
+  #   networks:
+  #     nitro:
 
   mysql:
     container_name: mysql
@@ -44,8 +44,8 @@ services:
       - MYSQL_DATABASE=arcturus
     volumes:
       - volume-mysql:/var/lib/mysql
-      - ./Mysql/conf.d:/etc/mysql/conf.d
-      - ./Arcturus/Database:/docker-entrypoint-initdb.d
+      - ./mysql/conf.d:/etc/mysql/conf.d
+      - ./mysql/dumps:/docker-entrypoint-initdb.d
     ports:
       - 13306:3306
     networks:
