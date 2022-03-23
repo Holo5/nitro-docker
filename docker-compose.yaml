@@ -23,6 +23,15 @@ services:
     networks:
       nitro:
 
+  nitro:
+    container_name: nitro
+    build:
+      context: Nitro
+    depends_on:
+      - arcturus
+    networks:
+      nitro:
+
   mysql:
     container_name: mysql
     image: mysql:latest
