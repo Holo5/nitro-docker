@@ -1,9 +1,9 @@
-[submodule "Arcturus/Sources"]
-	path = Arcturus/Sources
+[submodule "emulator/arcturus"]
+	path = emulator/arcturus
 	url = https://git.krews.org/morningstar/Arcturus-Community.git
-[submodule "Nitro/nitro-react"]
-	path = Nitro/nitro-react
+[submodule "nitro/nitro-react"]
+	path = nitro/nitro-react
 	url = https://git.krews.org/nitro/nitro-react
-[submodule "Nitro/nitro-converter"]
-	path = Nitro/nitro-converter
+[submodule "nitro/nitro-converter"]
+	path = nitro/nitro-converter
 	url = https://git.krews.org/nitro/nitro-converter
