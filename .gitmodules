@@ -7,9 +7,3 @@
 [submodule "nitro/nitro-converter"]
 	path = nitro/nitro-converter
 	url = https://git.krews.org/nitro/nitro-converter
-[submodule "react/nitro-react"]
-	path = react/nitro-react
-	url = https://git.krews.org/nitro/nitro-react
-[submodule "react/nitro-converter"]
-	path = react/nitro-converter
-	url = https://git.krews.org/nitro/nitro-converter
