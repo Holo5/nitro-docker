@@ -8,5 +8,6 @@ cd /app/nitro-react; yarn install;
 
 supervisorctl start swf-http-server
 supervisorctl start assets-http-server
+supervisorctl start nitro-dev-server
 
 tail -f /dev/null

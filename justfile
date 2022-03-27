@@ -29,6 +29,12 @@ watch-arcturus:
 shell-arcturus:
   docker exec -it arcturus bash
 
+# Restart Nitro dev server
+restart-nitro:
+  docker exec nitro supervisorctl stop nitro-dev-server
+  docker exec nitro bash -c "cp /app/configuration/nitro-react/public/* /app/nitro-react/public/"
+  docker exec nitro supervisorctl start nitro-dev-server
+
 # Enter in the Nitro's shell
 shell-nitro:
   docker exec -it nitro bash

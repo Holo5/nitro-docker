@@ -32,6 +32,7 @@ services:
     ports:
       - 18080:8080
       - 18081:8081
+      - 80:3000
     networks:
       nitro:
 
