@@ -1,8 +1,8 @@
 {
     "socket.url": "ws://127.0.0.1:12096",
-    "asset.url": "https://website.com",
+    "asset.url": "http://127.0.0.1:18080",
     "image.library.url": "https://website.com/c_images/",
-    "hof.furni.url": "https://website.com/dcr/hof_furni",
+    "hof.furni.url": "${asset.url}",
     "images.url": "${asset.url}/images",
     "gamedata.url": "${asset.url}/gamedata",
     "sounds.url": "${asset.url}/sounds/%sample%.mp3",
