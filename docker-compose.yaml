@@ -18,7 +18,7 @@ services:
     ports:
       - 13000:3000
       - 13001:3001
-      - 13002:2096
+      - 12096:2096
     networks:
       nitro:
 
@@ -30,7 +30,8 @@ services:
     volumes:
       - ./nitro/:/app/
     ports:
-      - 80:80
+      - 18080:8080
+      - 18081:8081
     networks:
       nitro:
 

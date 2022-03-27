@@ -1,0 +1,1135 @@
+{
+    "image.library.notifications.url": "${image.library.url}notifications/%image%.png",
+    "achievements.images.url": "${image.library.url}Quests/%image%.png",
+    "camera.url": "https://camera.com",
+    "thumbnails.url": "https://camera.com/thumbnail/%thumbnail%.png",
+    "url.prefix": "https://website.com",
+    "habbopages.url": "${url.prefix}/",
+    "group.homepage.url": "${url.prefix}/groups/%groupid%/id",
+    "guide.help.alpha.groupid": 0,
+    "chat.viewer.height.percentage": 0.40,
+    "widget.dimmer.colorwheel": false,
+    "avatar.wardrobe.max.slots": 10,
+    "user.badges.max.slots": 5,
+    "hc.disabled": false,
+    "hotelview": {
+        "widgets": {
+            "slot.1.widget": "promoarticle",
+            "slot.1.conf": "",
+            "slot.2.widget": "widgetcontainer",
+            "slot.2.conf": "image:${image.library.url}web_promo_small/spromo_Canal_Bundle.png,texts:2021NitroPromo,btnLink:https://google.com",
+            "slot.3.widget": "promoarticle",
+            "slot.3.conf": "",
+            "slot.4.widget": "",
+            "slot.4.conf": "",
+            "slot.5.widget": "",
+            "slot.5.conf": "",
+            "slot.6.widget": "achievementcompetition_hall_of_fame",
+            "slot.6.conf": "",
+            "slot.7.widget": "",
+            "slot.7.conf": ""
+        },
+        "images": {
+            "background": "${asset.url}images/reception/stretch_blue.png",
+            "background.colour": "#6eadc8",
+            "sun": "${asset.url}images/reception/sun.png",
+            "drape": "${asset.url}images/reception/drape.png",
+            "left": "${asset.url}images/reception/ts.png",
+            "right": "${asset.url}images/reception/US_right.png",
+            "right.repeat": "${asset.url}images/reception/US_top_right.png"
+        }
+    },
+    "achievements.unseen.ignored": [
+        "ACH_AllTimeHotelPresence"
+    ],
+    "avatareditor.show.clubitems.dimmed": true,
+    "avatareditor.show.clubitems.first": true,
+    "chat.history.max.items": 100,
+    "system.currency.types": [
+        -1,
+        0,
+        5
+    ],
+    "hc.center": {
+        "benefits.info": true,
+        "payday.info": true,
+        "gift.info": true,
+        "benefits.habbopage": "habboclub",
+        "payday.habbopage": "hcpayday",
+        "catalog.buy": "habbo_club",
+        "catalog.gifts": "club_gifts"
+    },
+    "currency.display.number.short": false,
+    "currency.asset.icon.url": "${images.url}/wallet/%type%.png",
+    "catalog.asset.url": "${image.library.url}catalogue",
+    "catalog.asset.image.url": "${catalog.asset.url}/%name%.gif",
+    "catalog.asset.icon.url": "${catalog.asset.url}/icon_%name%.png",
+    "chat.input.maxlength": 100,
+    "chat.styles.disabled": [],
+    "chat.styles": [
+        {
+            "styleId": 0,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": false,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 1,
+            "minRank": 5,
+            "isSystemStyle": true,
+            "isHcOnly": false,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 2,
+            "minRank": 5,
+            "isSystemStyle": true,
+            "isHcOnly": false,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 3,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": false,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 4,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": false,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 5,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": false,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 6,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": false,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 7,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": false,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 8,
+            "minRank": 5,
+            "isSystemStyle": true,
+            "isHcOnly": false,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 9,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 10,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 11,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 12,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 13,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 14,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 15,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 16,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 17,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 18,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 19,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 20,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 21,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 22,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 23,
+            "minRank": 5,
+            "isSystemStyle": false,
+            "isHcOnly": false,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 24,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 25,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 26,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 27,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 28,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 29,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 30,
+            "minRank": 5,
+            "isSystemStyle": true,
+            "isHcOnly": false,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 31,
+            "minRank": 5,
+            "isSystemStyle": true,
+            "isHcOnly": false,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 32,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 33,
+            "minRank": 5,
+            "isSystemStyle": true,
+            "isHcOnly": false,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 34,
+            "minRank": 5,
+            "isSystemStyle": true,
+            "isHcOnly": false,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 35,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 36,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        },
+        {
+            "styleId": 37,
+            "minRank": 5,
+            "isSystemStyle": false,
+            "isHcOnly": false,
+            "isAmbassadorOnly": true
+        },
+        {
+            "styleId": 38,
+            "minRank": 0,
+            "isSystemStyle": false,
+            "isHcOnly": true,
+            "isAmbassadorOnly": false
+        }
+    ],
+    "camera.available.effects": [
+        {
+            "name": "dark_sepia",
+            "colorMatrix": [
+                0.4,
+                0.4,
+                0.1,
+                0,
+                110,
+                0.3,
+                0.4,
+                0.1,
+                0,
+                30,
+                0.3,
+                0.2,
+                0.1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "minLevel": 0,
+            "enabled": true
+        },
+        {
+            "name": "increase_saturation",
+            "colorMatrix": [
+                2,
+                -0.5,
+                -0.5,
+                0,
+                0,
+                -0.5,
+                2,
+                -0.5,
+                0,
+                0,
+                -0.5,
+                -0.5,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "minLevel": 0,
+            "enabled": true
+        },
+        {
+            "name": "increase_contrast",
+            "colorMatrix": [
+                1.5,
+                0,
+                0,
+                0,
+                -50,
+                0,
+                1.5,
+                0,
+                0,
+                -50,
+                0,
+                0,
+                1.5,
+                0,
+                -50,
+                0,
+                0,
+                0,
+                1.5,
+                0
+            ],
+            "minLevel": 0,
+            "enabled": true
+        },
+        {
+            "name": "shadow_multiply_02",
+            "colorMatrix": [],
+            "minLevel": 0,
+            "blendMode": 2,
+            "enabled": true
+        },
+        {
+            "name": "color_1",
+            "colorMatrix": [
+                0.393,
+                0.769,
+                0.189,
+                0,
+                0,
+                0.349,
+                0.686,
+                0.168,
+                0,
+                0,
+                0.272,
+                0.534,
+                0.131,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "minLevel": 1,
+            "enabled": true
+        },
+        {
+            "name": "hue_bright_sat",
+            "colorMatrix": [
+                1,
+                0.6,
+                0.2,
+                0,
+                -50,
+                0.2,
+                1,
+                0.6,
+                0,
+                -50,
+                0.6,
+                0.2,
+                1,
+                0,
+                -50,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "minLevel": 1,
+            "enabled": true
+        },
+        {
+            "name": "hearts_hardlight_02",
+            "colorMatrix": [],
+            "minLevel": 1,
+            "blendMode": 9,
+            "enabled": true
+        },
+        {
+            "name": "texture_overlay",
+            "colorMatrix": [],
+            "minLevel": 1,
+            "blendMode": 4,
+            "enabled": true
+        },
+        {
+            "name": "pinky_nrm",
+            "colorMatrix": [],
+            "minLevel": 1,
+            "blendMode": 0,
+            "enabled": true
+        },
+        {
+            "name": "color_2",
+            "colorMatrix": [
+                0.333,
+                0.333,
+                0.333,
+                0,
+                0,
+                0.333,
+                0.333,
+                0.333,
+                0,
+                0,
+                0.333,
+                0.333,
+                0.333,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "minLevel": 2,
+            "enabled": true
+        },
+        {
+            "name": "night_vision",
+            "colorMatrix": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1.1,
+                0,
+                0,
+                -50,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "minLevel": 2,
+            "enabled": true
+        },
+        {
+            "name": "stars_hardlight_02",
+            "colorMatrix": [],
+            "minLevel": 2,
+            "blendMode": 9,
+            "enabled": true
+        },
+        {
+            "name": "coffee_mpl",
+            "colorMatrix": [],
+            "minLevel": 2,
+            "blendMode": 2,
+            "enabled": true
+        },
+        {
+            "name": "security_hardlight",
+            "colorMatrix": [],
+            "minLevel": 3,
+            "blendMode": 9,
+            "enabled": true
+        },
+        {
+            "name": "bluemood_mpl",
+            "colorMatrix": [],
+            "minLevel": 3,
+            "blendMode": 2,
+            "enabled": true
+        },
+        {
+            "name": "rusty_mpl",
+            "colorMatrix": [],
+            "minLevel": 3,
+            "blendMode": 2,
+            "enabled": true
+        },
+        {
+            "name": "decr_conrast",
+            "colorMatrix": [
+                0.5,
+                0,
+                0,
+                0,
+                50,
+                0,
+                0.5,
+                0,
+                0,
+                50,
+                0,
+                0,
+                0.5,
+                0,
+                50,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "minLevel": 4,
+            "enabled": true
+        },
+        {
+            "name": "green_2",
+            "colorMatrix": [
+                0.5,
+                0.5,
+                0.5,
+                0,
+                0,
+                0.5,
+                0.5,
+                0.5,
+                0,
+                90,
+                0.5,
+                0.5,
+                0.5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "minLevel": 4,
+            "enabled": true
+        },
+        {
+            "name": "alien_hrd",
+            "colorMatrix": [],
+            "minLevel": 4,
+            "blendMode": 9,
+            "enabled": true
+        },
+        {
+            "name": "color_3",
+            "colorMatrix": [
+                0.609,
+                0.609,
+                0.082,
+                0,
+                0,
+                0.309,
+                0.609,
+                0.082,
+                0,
+                0,
+                0.309,
+                0.609,
+                0.082,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "minLevel": 5,
+            "enabled": true
+        },
+        {
+            "name": "color_4",
+            "colorMatrix": [
+                0.8,
+                -0.8,
+                1,
+                0,
+                70,
+                0.8,
+                -0.8,
+                1,
+                0,
+                70,
+                0.8,
+                -0.8,
+                1,
+                0,
+                70,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "minLevel": 5,
+            "enabled": true
+        },
+        {
+            "name": "toxic_hrd",
+            "colorMatrix": [],
+            "minLevel": 5,
+            "blendMode": 9,
+            "enabled": true
+        },
+        {
+            "name": "hypersaturated",
+            "colorMatrix": [
+                2,
+                -1,
+                0,
+                0,
+                0,
+                -1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "minLevel": 6,
+            "enabled": true
+        },
+        {
+            "name": "Yellow",
+            "colorMatrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "minLevel": 6,
+            "enabled": true
+        },
+        {
+            "name": "misty_hrd",
+            "colorMatrix": [],
+            "minLevel": 6,
+            "blendMode": 9,
+            "enabled": true
+        },
+        {
+            "name": "x_ray",
+            "colorMatrix": [
+                0,
+                1.2,
+                0,
+                0,
+                -100,
+                0,
+                2,
+                0,
+                0,
+                -120,
+                0,
+                2,
+                0,
+                0,
+                -120,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "minLevel": 7,
+            "enabled": true
+        },
+        {
+            "name": "decrease_saturation",
+            "colorMatrix": [
+                0.7,
+                0.2,
+                0.2,
+                0,
+                0,
+                0.2,
+                0.7,
+                0.2,
+                0,
+                0,
+                0.2,
+                0.2,
+                0.7,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "minLevel": 7,
+            "enabled": true
+        },
+        {
+            "name": "drops_mpl",
+            "colorMatrix": [],
+            "minLevel": 8,
+            "blendMode": 2,
+            "enabled": true
+        },
+        {
+            "name": "shiny_hrd",
+            "colorMatrix": [],
+            "minLevel": 9,
+            "blendMode": 9,
+            "enabled": true
+        },
+        {
+            "name": "glitter_hrd",
+            "colorMatrix": [],
+            "minLevel": 10,
+            "blendMode": 9,
+            "enabled": true
+        },
+        {
+            "name": "frame_gold",
+            "colorMatrix": [],
+            "minLevel": 10,
+            "blendMode": 0,
+            "enabled": true
+        },
+        {
+            "name": "frame_gray_4",
+            "colorMatrix": [],
+            "minLevel": 10,
+            "blendMode": 0,
+            "enabled": true
+        },
+        {
+            "name": "frame_black_2",
+            "colorMatrix": [],
+            "minLevel": 10,
+            "blendMode": 0,
+            "enabled": true
+        },
+        {
+            "name": "frame_wood_2",
+            "colorMatrix": [],
+            "minLevel": 10,
+            "blendMode": 0,
+            "enabled": true
+        },
+        {
+            "name": "finger_nrm",
+            "colorMatrix": [],
+            "minLevel": 10,
+            "blendMode": 0,
+            "enabled": true
+        },
+        {
+            "name": "color_5",
+            "colorMatrix": [
+                3.309,
+                0.609,
+                1.082,
+                0.2,
+                0,
+                0.309,
+                0.609,
+                0.082,
+                0,
+                0,
+                1.309,
+                0.609,
+                0.082,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "minLevel": 10,
+            "enabled": true
+        },
+        {
+            "name": "black_white_negative",
+            "colorMatrix": [
+                -0.5,
+                -0.5,
+                -0.5,
+                0,
+                0,
+                -0.5,
+                -0.5,
+                -0.5,
+                0,
+                0,
+                -0.5,
+                -0.5,
+                -0.5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "minLevel": 10,
+            "enabled": true
+        },
+        {
+            "name": "blue",
+            "colorMatrix": [
+                0.5,
+                0.5,
+                0.5,
+                0,
+                -255,
+                0.5,
+                0.5,
+                0.5,
+                0,
+                -170,
+                0.5,
+                0.5,
+                0.5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "minLevel": 10,
+            "enabled": true
+        },
+        {
+            "name": "red",
+            "colorMatrix": [
+                0.5,
+                0.5,
+                0.5,
+                0,
+                0,
+                0.5,
+                0.5,
+                0.5,
+                0,
+                -170,
+                0.5,
+                0.5,
+                0.5,
+                0,
+                -170,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "minLevel": 10,
+            "enabled": true
+        },
+        {
+            "name": "green",
+            "colorMatrix": [
+                0.5,
+                0.5,
+                0.5,
+                0,
+                -170,
+                0.5,
+                0.5,
+                0.5,
+                0,
+                0,
+                0.5,
+                0.5,
+                0.5,
+                0,
+                -170,
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "minLevel": 10,
+            "enabled": true
+        }
+    ],
+    "notification": {
+        "notification.admin.transient": {
+            "display": "POP_UP",
+            "image": "${image.library.url}/album1358/frank_wave_001.gif"
+        },
+        "notification.builders_club.membership_expired": {
+            "display": "POP_UP"
+        },
+        "notification.builders_club.membership_expires": {
+            "display": "POP_UP",
+            "image": "${image.library.url}/notifications/builders_club_room_locked_small.png"
+        },
+        "notification.builders_club.membership_extended": {
+            "delivery": "PERSISTENT",
+            "display": "POP_UP"
+        },
+        "notification.builders_club.membership_made": {
+            "delivery": "PERSISTENT",
+            "display": "POP_UP",
+            "image": "${image.library.url}/notifications/builders_club_membership_extended.png"
+        },
+        "notification.builders_club.membership_renewed": {
+            "delivery": "PERSISTENT",
+            "display": "POP_UP",
+            "image": "${image.library.url}/notifications/builders_club_membership_extended.png"
+        },
+        "notification.builders_club.room_locked": {
+            "display": "BUBBLE",
+            "image": "${image.library.url}/notifications/builders_club_room_locked_small.png"
+        },
+        "notification.builders_club.room_unlocked": {
+            "display": "BUBBLE"
+        },
+        "notification.builders_club.visit_denied_for_owner": {
+            "display": "BUBBLE",
+            "image": "${image.library.url}/notifications/builders_club_room_locked_small.png"
+        },
+        "notification.builders_club.visit_denied_for_visitor": {
+            "display": "POP_UP",
+            "image": "${image.library.url}/notifications/builders_club_room_locked.png"
+        },
+        "notification.campaign.credit.donation": {
+            "display": "BUBBLE"
+        },
+        "notification.campaign.product.donation": {
+            "display": "BUBBLE"
+        },
+        "notification.casino.too_many_dice.placement": {
+            "display": "POP_UP"
+        },
+        "notification.casino.too_many_dice": {
+            "display": "POP_UP"
+        },
+        "notification.cfh.created": {
+            "display": "POP_UP",
+            "title": ""
+        },
+        "notification.feed.enabled": false,
+        "notification.floorplan_editor.error": {
+            "display": "POP_UP"
+        },
+        "notification.forums.delivered": {
+            "delivery": "PERSISTENT",
+            "display": "POP_UP"
+        },
+        "notification.forums.forum_settings_updated": {
+            "display": "BUBBLE"
+        },
+        "notification.forums.message.hidden": {
+            "display": "BUBBLE"
+        },
+        "notification.forums.message.restored": {
+            "display": "BUBBLE"
+        },
+        "notification.forums.thread.hidden": {
+            "display": "BUBBLE"
+        },
+        "notification.forums.thread.locked": {
+            "display": "BUBBLE"
+        },
+        "notification.forums.thread.pinned": {
+            "display": "BUBBLE"
+        },
+        "notification.forums.thread.restored": {
+            "display": "BUBBLE"
+        },
+        "notification.forums.thread.unlocked": {
+            "display": "BUBBLE"
+        },
+        "notification.forums.thread.unpinned": {
+            "display": "BUBBLE"
+        },
+        "notification.furni_placement_error": {
+            "display": "BUBBLE"
+        },
+        "notification.gifting.valentine": {
+            "delivery": "PERSISTENT",
+            "display": "BUBBLE",
+            "image": "${image.library.url}/notifications/polaroid_photo.png"
+        },
+        "notification.items.enabled": true,
+        "notification.mute.forbidden.time": {
+            "display": "BUBBLE"
+        },
+        "notification.npc.gift.received": {
+            "display": "BUBBLE",
+            "image": "${image.library.url}/album1584/X1517.gif"
+        }
+    }
+}
