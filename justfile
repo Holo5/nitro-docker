@@ -35,4 +35,4 @@ shell-nitro:
 
 # Extract nitro assets from SWF
 extract-nitro-assets:
-  docker exec -i nitro bash -c "cp /app/configuration/nitro-converter/configuration.json /app/nitro-converter/src/configuration.json; cd /app/nitro-converter; yarn start"
+  docker exec -i nitro bash -c "cp /app/configuration/nitro-converter/configuration.json /app/nitro-converter/src/configuration.json; cd /app/nitro-converter; yarn start; mv /app/nitro-converter/assets/* /app/nitro-assets/"
