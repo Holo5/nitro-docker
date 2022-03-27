@@ -28,3 +28,11 @@ watch-arcturus:
 # Enter in the Arcturus's shell:
 shell-arcturus:
   docker exec -it arcturus bash
+
+# Enter in the Nitro's shell
+shell-nitro:
+  docker exec -it nitro bash
+
+# Extract nitro assets from SWF
+extract-nitro-assets:
+  docker exec -i nitro bash -c "cp /app/configuration/nitro-converter/configuration.json /app/nitro-converter/src/configuration.json; cd /app/nitro-converter; yarn start"
