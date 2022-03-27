@@ -1,6 +1,6 @@
 #!/bin/bash
 
-supervisord -c /app/Supervisor/supervisord.conf
+supervisord -c /app/supervisor/supervisord.conf
 
 cd /app/arcturus
 mvn package
