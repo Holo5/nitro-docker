@@ -9,9 +9,8 @@ services:
   arcturus:
     container_name: arcturus
     build:
-      context: Arcturus
+      context: emulator
     entrypoint: ["/bin/sh","/app/scripts/build.sh"]
-    restart: always
     volumes:
       - ./emulator/:/app/
     depends_on:
@@ -23,22 +22,22 @@ services:
     networks:
       nitro:
 
-   nitro:
-     container_name: nitro
-     build:
-       context: Nitro
-     volumes:
-       - ./nitro/:/app/
-     depends_on:
-       - arcturus
-     networks:
-       nitro:
+  nitro:
+    container_name: nitro
+    build:
+      context: nitro
+    entrypoint: ["/bin/sh","/app/scripts/build.sh"]
+    volumes:
+      - ./nitro/:/app/
+    ports:
+      - 80:80
+    networks:
+      nitro:
 
   mysql:
     container_name: mysql
     image: mysql:latest
     command: --default-authentication-plugin=mysql_native_password
-    restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=arcturus_root_pw
       - MYSQL_USER=arcturus_user

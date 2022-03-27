@@ -1,8 +1,13 @@
-FROM nodejs:17-alpine
+FROM node:lts-alpine
 
 WORKDIR /app
 
-npm install -g http-server
+RUN apk update
+RUN apk add bash
+RUN apk add mysql-client
+RUN apk add supervisor
+
+RUN yarn global add http-server
 
 RUN yarn install
 
