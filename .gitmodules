@@ -7,6 +7,6 @@
 [submodule "nitro/nitro-converter"]
 	path = nitro/nitro-converter
 	url = https://git.krews.org/nitro/nitro-converter
-[submodule "nitro-swf"]
-	path = nitro-swf
+[submodule "nitro/nitro-swf"]
+	path = nitro/nitro-swf
 	url = https://git.krews.org/morningstar/arcturus-morningstar-default-swf-pack.git
