@@ -19,7 +19,21 @@ mysql:
 
 # Restart Arcturus Emulator
 restart-arcturus:
-  docker exec arcturus supervisorctl restart arcturus-emulator 
+  docker exec arcturus supervisorctl restart arcturus-emulator
+
+# Stop Arcturus Emulator
+stop-arcturus:
+  docker exec arcturus supervisorctl stop arcturus-emulator
+
+# Start Arcturus Emulator
+start-arcturus:
+  docker exec arcturus supervisorctl start arcturus-emulator
+
+# Recompile Arcturus Emulator
+recompile-arcturus:
+  docker exec arcturus supervisorctl stop arcturus-emulator
+  docker exec -it arcturus bash -c "cd /app/arcturus; mvn package; cp /app/config.ini /app/arcturus/target/config.ini;"
+  docker exec arcturus supervisorctl start arcturus-emulator
 
 # Watch Arcturus's output
 watch-arcturus:
