@@ -27,6 +27,7 @@ services:
       - ./nitro/:/app/
     ports:
       - 1080:3000
+      - 2096:2096
     networks:
       nitro:
 
