@@ -53,6 +53,11 @@ restart-nitro:
 shell-nitro:
   docker exec -it nitro bash
 
+# Watch Nitro dev server's output
+watch-nitro:
+  docker exec nitro supervisorctl tail -f nitro-dev-server
+
+
 # Extract nitro assets from SWF
 extract-nitro-assets:
   docker exec -it nitro bash -c "cp /app/configuration/nitro-converter/configuration.json /app/nitro-converter/src/configuration.json; \
