@@ -6,6 +6,7 @@ RUN apk update
 RUN apk add bash
 RUN apk add mysql-client
 RUN apk add supervisor
+RUN apk add rsync
 
 RUN yarn global add http-server
 
