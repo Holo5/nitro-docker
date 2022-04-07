@@ -1,7 +1,7 @@
 {
     "socket.url": "ws://127.0.0.1:2096",
     "asset.url": "http://127.0.0.1:8080",
-    "image.library.url": "https://website.com/c_images/",
+    "image.library.url": "http://127.0.0.1:8081/c_images/",
     "hof.furni.url": "${asset.url}",
     "images.url": "${asset.url}/images",
     "gamedata.url": "${asset.url}/gamedata",

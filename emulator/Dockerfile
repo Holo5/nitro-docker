@@ -8,7 +8,3 @@ RUN apk add bash
 RUN apk add maven
 RUN apk add mysql-client
 RUN apk add supervisor
-
-EXPOSE 3000
-EXPOSE 3001
-EXPOSE 2096

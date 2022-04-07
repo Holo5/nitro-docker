@@ -11,6 +11,3 @@ RUN apk add rsync
 RUN yarn global add http-server
 
 RUN yarn install
-
-EXPOSE 8080
-EXPOSE 8081
