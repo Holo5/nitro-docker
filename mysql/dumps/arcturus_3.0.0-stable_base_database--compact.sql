@@ -1572,7 +1572,7 @@ CREATE TABLE `users` (
   KEY `auth_ticket` (`auth_ticket`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
 /*!40101 SET character_set_client = @saved_cs_client */;
-INSERT INTO `users` VALUES (1,'Systemaccount','SYSTEMACC','','mail@hoster.de','1',1,1,1594680183,1,'','he-3884-92-93.ch-4004-92.hr-3251-39-49.hd-3100-5.lg-3078-110','F',1,0,0,0,'0','','127.0.0.1','127.0.0.1','dde7b67386d37aff60022250b84efbff5b1fd2c4ae5c8609049470a1c0feffc4',0,NULL,NULL,NULL);
+INSERT INTO `users` VALUES (1,'Systemaccount','SYSTEMACC','','mail@hoster.de','1',1,1,1594680183,1,'','hd-3095-1.ch-265-82.lg-3235-96.sh-3275-1416.ha-3426-110.hr-3531-61.he-1601.ea-3169.fa-3472.cp-3310.cc-3007.ca-1809.wa-2007','M',1,0,0,0,'0','123','127.0.0.1','127.0.0.1','dde7b67386d37aff60022250b84efbff5b1fd2c4ae5c8609049470a1c0feffc4',0,NULL,NULL,NULL);
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `users_achievements` (
