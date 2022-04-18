@@ -60,6 +60,14 @@ restart-nitro:
   docker exec nitro bash -c "cp /app/configuration/nitro-react/public/* /app/nitro-react/public/"
   docker exec nitro supervisorctl start nitro-dev-server
 
+# Stop Nitro Dev Server
+stop-nitro:
+  docker exec nitro supervisorctl stop nitro-dev-server
+
+# Start Nitro Dev Server
+start-nitro:
+  docker exec nitro supervisorctl start nitro-dev-server
+
 # Enter in the Nitro's shell
 shell-nitro:
   docker exec -it nitro bash
