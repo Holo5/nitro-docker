@@ -2,6 +2,10 @@ version: '3.7'
 
 volumes:
   volume-mysql:
+  volume-arcturus-maven-repo:
+  volume-arcturus-target:
+  volume-nitro-converter-node-modules:
+  volume-nitro-react-node-modules:
 
 services:
   arcturus:
@@ -11,6 +15,8 @@ services:
     entrypoint: ["/bin/sh","/app/scripts/build.sh"]
     volumes:
       - ./emulator/:/app/
+      - volume-arcturus-target:/app/arcturus/target
+      - volume-arcturus-maven-repo:/root/.m2
     ports:
       - 3000:3000
       - 3001:3001
@@ -27,6 +33,8 @@ services:
     entrypoint: ["/bin/sh","/app/scripts/build.sh"]
     volumes:
       - ./nitro/:/app/
+      - volume-nitro-converter-node-modules:/app/nitro-converter/node_modules
+      - volume-nitro-react-node-modules:/app/nitro-react/node_modules
     ports:
       - 1080:3000
       - 8080:8080
