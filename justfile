@@ -9,9 +9,20 @@ install:
   git submodule init
   git submodule update
 
-# Start Mysql, Arcturus Emulator & Nitro
+# Start Mysql, Arcturus Emulator & Nitro (not in daemon mod)
 start-all:
-  docker-compose up -d
+  docker-compose up
+
+# Close docker containers, remove images and clean volumes
+clean-docker:
+  docker-compose down
+  docker image rm nitro-docker_arcturus -f
+  docker image rm nitro-docker_nitro -f
+  docker volume rm nitro-docker_volume-arcturus-maven-repo
+  docker volume rm nitro-docker_volume-arcturus-target
+  docker volume rm nitro-docker_volume-mysql
+  docker volume rm nitro-docker_volume-nitro-converter-node-modules
+  docker volume rm nitro-docker_volume-nitro-react-node-modules
 
 # Open the MySQL console
 mysql:
@@ -60,10 +71,8 @@ watch-nitro:
 
 # Extract nitro assets from SWF
 extract-nitro-assets:
-  docker exec -it nitro bash -c "cp /app/configuration/nitro-converter/configuration.json /app/nitro-converter/src/configuration.json; \
-   cd /app/nitro-converter; \
-   yarn ts-node-dev --transpile-only src/Main.ts; \
-   echo \"Moving assets...\"; \
-   rsync -r /app/nitro-converter/assets/* /app/nitro-assets/; \
-   echo \"Done !\"; \
-   exit;"
+  docker exec -it nitro bash -c "cp /app/configuration/nitro-converter/configuration.json /app/nitro-converter/src/configuration.json"
+  docker exec -it nitro bash -c "cd /app/nitro-converter; yarn ts-node-dev --transpile-only src/Main.ts"
+  docker exec -it nitro bash -c "echo 'Moving assets...'"
+  docker exec -it nitro bash -c "rsync -r /app/nitro-converter/assets/* /app/nitro-assets/"
+  docker exec -it nitro bash -c "echo 'Done !'"
