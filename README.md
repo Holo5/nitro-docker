@@ -14,7 +14,7 @@ Once nitro accessible on http://127.0.0.1:1080?sso=123, you can extract all asse
 
 ## More commands
 - `just restart-arcturus`: restart arcturus emulator
-- `just restart-nitro`: restart nito dev server (Craco in nitro-react)
+- `just restart-nitro`: restart nitro dev server (Craco in nitro-react)
 - `just watch-arcturus`: watch the emulator output
 - `just watch-nitro`: watch the nitro dev server output
 - `just --list`: display all usefull commands <3
