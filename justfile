@@ -1,8 +1,7 @@
 set windows-powershell := true
 
-# Desc
-desc:
-  echo "Please, use other recipe to make you nitro dev environment :)"
+default:
+  @just --list
 
 # Install all easily
 install:
