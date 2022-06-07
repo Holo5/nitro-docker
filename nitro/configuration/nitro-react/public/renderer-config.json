@@ -2,7 +2,7 @@
     "socket.url": "ws://127.0.0.1:2096",
     "asset.url": "http://127.0.0.1:8080",
     "image.library.url": "http://127.0.0.1:8081/c_images/",
-    "hof.furni.url": "${asset.url}",
+    "hof.furni.url": "http://127.0.0.1:8081/hof_furni/",
     "images.url": "${asset.url}/images",
     "gamedata.url": "${asset.url}/gamedata",
     "sounds.url": "${asset.url}/sounds/%sample%.mp3",
