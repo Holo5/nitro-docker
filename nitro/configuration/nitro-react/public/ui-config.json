@@ -3,7 +3,7 @@
     "achievements.images.url": "${image.library.url}Quests/%image%.png",
     "camera.url": "https://camera.com",
     "thumbnails.url": "https://camera.com/thumbnail/%thumbnail%.png",
-    "url.prefix": "https://website.com",
+    "url.prefix": "http://localhost",
     "habbopages.url": "${url.prefix}/",
     "group.homepage.url": "${url.prefix}/groups/%groupid%/id",
     "guide.help.alpha.groupid": 0,
