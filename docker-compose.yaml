@@ -47,9 +47,9 @@ services:
     image: php:8.0-apache
     build:
       context: cms
-    entrypoint: ["/bin/sh","/app/scripts/build.sh"]
+    entrypoint: ["/bin/sh","/var/www/scripts/build.sh"]
     volumes:
-      - ./cms/:/app/
+      - ./cms/:/var/www/
     depends_on:
       - mysql
     ports:

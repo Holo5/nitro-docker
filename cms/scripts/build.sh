@@ -1,10 +1,11 @@
 #!/bin/bash
 
 # Move config
-cp -av /app/configuration/.env /app/cosmic/
+cp -av /var/www/configuration/.env /var/www/cosmic/
+cp -av /var/www/configuration/Config.php /var/www/cosmic/src/App/
 
 # Install composer dependencies
-cd /app/cosmic/
-composer update
+cd /var/www/cosmic/
+composer install
 
-tail -f /dev/null
+apache2-foreground
