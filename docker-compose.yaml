@@ -49,7 +49,7 @@ services:
       context: cosmic
     entrypoint: ["/bin/sh","/var/www/scripts/build.sh"]
     volumes:
-      - ./cosmic/:/var/www/
+      - ./cms/cosmic/:/var/www/
     depends_on:
       - mysql
     ports:
