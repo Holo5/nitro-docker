@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Move config
-cp -av /var/www/configuration/.env /var/www/cosmic/
+cp -av /app/configuration/.env /app/cosmic/
 
 # Install composer dependencies
-cd /var/www/cosmic/
+cd /app/cosmic/
 composer update
 
 tail -f /dev/null

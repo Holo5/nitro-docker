@@ -15,8 +15,16 @@ RUN a2enmod rewrite
 # Enable mod header
 RUN a2enmod headers
 
-# Enable ext-gd
+# Install and enable ext-gd
 RUN apt-get update && \
     apt-get install -y libfreetype6-dev libjpeg62-turbo-dev libpng-dev && \
-    docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ && \
+    docker-php-ext-configure gd && \
     docker-php-ext-install gd
+
+# Install zip and unzip
+RUN apt-get install zip unzip \
+     && apt-get install -y libzip-dev \
+     && docker-php-ext-install zip
+
+# Install git
+RUN apt-get install git -y
