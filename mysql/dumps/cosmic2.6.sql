@@ -1623,9 +1623,6 @@ CREATE TABLE `website_profile_homes`  (
 -- ----------------------------
 -- Alter table fixes for Cosmic to work
 -- ----------------------------
-ALTER TABLE users ADD secret_key varchar(40) NULL DEFAULT NULL;
-ALTER TABLE users ADD pincode varchar(11) NULL DEFAULT NULL;
-ALTER TABLE users ADD extra_rank int(2) NULL DEFAULT NULL;
 ALTER TABLE users ADD template enum('light','dark') NULL DEFAULT 'light';
 ALTER TABLE bans MODIFY COLUMN machine_id varchar(255)NOT NULL DEFAULT '';
 
