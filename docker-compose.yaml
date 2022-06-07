@@ -46,10 +46,10 @@ services:
     container_name: cosmic
     image: php:8.0-apache
     build:
-      context: cosmic
-    entrypoint: ["/bin/sh","/var/www/scripts/build.sh"]
+      context: cms
+    entrypoint: ["/bin/sh","/app/scripts/build.sh"]
     volumes:
-      - ./cms/cosmic/:/var/www/
+      - ./cms/:/app/
     depends_on:
       - mysql
     ports:
