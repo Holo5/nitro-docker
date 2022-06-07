@@ -42,6 +42,21 @@ services:
     networks:
       nitro:
 
+  cosmic:
+    container_name: cosmic
+    image: php:8.0-apache
+    build:
+      context: cosmic
+    entrypoint: ["/bin/sh","/var/www/scripts/build.sh"]
+    volumes:
+      - ./cosmic/:/var/www/
+    depends_on:
+      - mysql
+    ports:
+      - 80:80
+    networks:
+      nitro:
+
   mysql:
     container_name: mysql
     image: mariadb:latest
