@@ -17,8 +17,8 @@ clean-docker:
   docker-compose down
   docker image rm nitro-docker_arcturus -f
   docker image rm nitro-docker_nitro -f
-  docker image rm php -f
-  docker image rm mysql -f
+  docker image rm php:8.0-apache -f
+  docker image rm mariadb:latest -f
   docker volume rm nitro-docker_volume-arcturus-maven-repo
   docker volume rm nitro-docker_volume-arcturus-target
   docker volume rm nitro-docker_volume-mysql
