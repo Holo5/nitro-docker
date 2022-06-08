@@ -1,5 +1,8 @@
 FROM php:8.0-apache
 
+# Add composer
+COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
+
 # Change root directory
 ENV APACHE_DOCUMENT_ROOT /var/www/cosmic/public/
 
