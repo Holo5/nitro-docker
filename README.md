@@ -30,6 +30,11 @@ Mysql server use these credentials:
 ```
 The first database come from mysql/dumps, it's the base Arcturus database for 3.0.X with just a default SSO ticket (123).
 
+### Cosmic
+- Cosmic is installed in cms/cosmic, also a submodule from krews.git.
+- It's running on php 8.0, the database and plugin have already been imported.
+- All the configuration can be found in `cms/configuration`
+
 ### Arcturus
 - Arcturus is stored in emulator/arcturus, it's just a submodule from krews.git. Each time you run the nitro-arcturus image, each time the emulator is recompiled. You can recompile manualy with the command `just recompile-arcturus`.
 - The NitroWebSocket plugin is already added
@@ -40,5 +45,6 @@ The first database come from mysql/dumps, it's the base Arcturus database for 3.
 - The nitro-image contains 3 server: assets server (for all *.nitro files), swf server from morningstar (who contain all current useful SWF) and nitro-dev server on nitro-react.
 - All extracted assets come from nitro-swf and will be extracted in nitro-assets (the nitro converter use the swf server)
 - All the configurations for nitro-react are in `nitro/configuration`. If you make some change, just make `just restart-nitro`
+- I took the liberty to change node-sass to sass (since node-sass is deprecated and isn't working on arm arch)
 
 ### Have fun <3
