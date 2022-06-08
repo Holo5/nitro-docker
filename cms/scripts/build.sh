@@ -8,4 +8,5 @@ cp -av /var/www/configuration/Config.php /var/www/cosmic/src/App/
 cd /var/www/cosmic/
 composer install
 
+# Start apache
 apache2-foreground
