@@ -7,8 +7,8 @@ cp /app/configuration/nitro-react/public/* /app/nitro-react/public/
 cd /app/nitro-react; yarn install;
 
 # sass patch
-yarn remove node-sass; yarn add sass; yarn update
-cp -av /app/sass-patch/LoadingView.scss /app/nitro-react/src/components/
+yarn remove node-sass; yarn add sass; yarn install
+cp -av /app/sass-patch/LoadingView.scss /app/nitro-react/src/components/loading/
 
 supervisorctl start swf-http-server
 supervisorctl start assets-http-server
