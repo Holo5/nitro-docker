@@ -10,8 +10,4 @@ RUN apk add rsync
 
 RUN yarn global add http-server
 
-# sass patch
-RUN yarn remove node-sass
-RUN yarn add sass
-
 RUN yarn install
