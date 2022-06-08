@@ -4,7 +4,6 @@
 [submodule "nitro/nitro-react"]
 	path = nitro/nitro-react
 	url = https://git.krews.org/nitro/nitro-react.git
-	branch = dev
 [submodule "nitro/nitro-converter"]
 	path = nitro/nitro-converter
 	url = https://git.krews.org/nitro/nitro-converter.git
