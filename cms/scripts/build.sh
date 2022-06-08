@@ -1,11 +1,13 @@
 #!/bin/bash
 
+cd /var/www/
+
 # Move config
-cp -av /var/www/configuration/.env /var/www/cosmic/
-cp -av /var/www/configuration/Config.php /var/www/cosmic/src/App/
+cp -av configuration/.env cosmic/
+cp -av configuration/Config.php cosmic/src/App/
 
 # Install composer dependencies
-cd /var/www/cosmic/
+cd cosmic/
 composer install
 
 # Start apache
