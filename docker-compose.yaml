@@ -56,7 +56,7 @@ services:
       - 80:80
     networks:
       nitro:
-        ipv4_address: 192.168.96.4
+        ipv4_address: 192.168.96.10
 
   mysql:
     container_name: mysql
