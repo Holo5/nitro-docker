@@ -56,6 +56,7 @@ services:
       - 80:80
     networks:
       nitro:
+        ipv4_address: 192.168.96.4
 
   mysql:
     container_name: mysql
@@ -77,3 +78,7 @@ services:
 
 networks:
   nitro:
+    ipam:
+      driver: default
+      config:
+        - subnet: "192.168.96.0/20"
