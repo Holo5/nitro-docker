@@ -31,3 +31,7 @@ RUN apt-get install git -y
 
 # Install pdo and mysqli
 RUN docker-php-ext-install mysqli pdo pdo_mysql
+
+# Install socket ext
+ENV CFLAGS="$CFLAGS -D_GNU_SOURCE"
+RUN docker-php-ext-install sockets
