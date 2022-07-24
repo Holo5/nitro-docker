@@ -2,3 +2,4 @@
 **/*.pid
 emulator/logging
 nitro/nitro-assets/*
+.DS_Store

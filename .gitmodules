@@ -4,6 +4,7 @@
 [submodule "nitro/nitro-react"]
 	path = nitro/nitro-react
 	url = https://git.krews.org/nitro/nitro-react.git
+	branch = dev
 [submodule "nitro/nitro-converter"]
 	path = nitro/nitro-converter
 	url = https://git.krews.org/nitro/nitro-converter.git
@@ -13,3 +14,6 @@
 [submodule "nitro/nitro-assets"]
 	path = nitro/nitro-assets
 	url = https://git.krews.org/nitro/default-assets.git
+[submodule "cms/cosmic"]
+	path = cms/cosmic
+	url = https://git.krews.org/Raizer/Cosmic.git

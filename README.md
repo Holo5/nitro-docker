@@ -30,6 +30,11 @@ Mysql server use these credentials:
 ```
 The first database come from mysql/dumps, it's the base Arcturus database for 3.0.X with just a default SSO ticket (123).
 
+### Cosmic
+- Cosmic is installed in cms/cosmic, also a submodule from krews.git.
+- It's running on php 8.0, the database and plugin have already been imported.
+- All the configuration can be found in `cms/configuration`
+
 ### Arcturus
 - Arcturus is stored in emulator/arcturus, it's just a submodule from krews.git. Each time you run the nitro-arcturus image, each time the emulator is recompiled. You can recompile manualy with the command `just recompile-arcturus`.
 - The NitroWebSocket plugin is already added
