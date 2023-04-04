@@ -9,8 +9,10 @@ Nitro docker is a quick-to-setup docker dev environment. It can be run on Window
 - `just install`
 - `just start-all`
 
+## Next Steps
 All container run in a daemon mod, so you will need to wait 5/10 minutes all servers.
-Once nitro accessible on http://127.0.0.1:1080?sso=123, you can extract all assets easily with the command `just extract-nitro-assets`
+- Once nitro accessible on http://127.0.0.1:1080?sso=123
+- you can extract all assets easily with the command `just extract-nitro-assets`
 
 ## More commands
 - `just restart-arcturus`: restart arcturus emulator
