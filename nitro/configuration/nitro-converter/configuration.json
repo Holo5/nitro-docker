@@ -1,5 +1,5 @@
 {
-  "flash.client.url": "http://127.0.0.1:8081/gordon/PRODUCTION-202006192205-424220153/",
+  "flash.client.url": "http://127.0.0.1:8081/gordon/PRODUCTION/",
   "furnidata.load.url": "http://127.0.0.1:8081/gamedata/furnidata.xml",
   "productdata.load.url": "http://127.0.0.1:8081/gamedata/productdata.txt",
   "figuredata.load.url": "https://www.habbo.com/gamedata/figuredata/1",
