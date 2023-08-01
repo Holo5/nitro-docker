@@ -36,7 +36,7 @@ services:
       - volume-nitro-converter-node-modules:/app/nitro-converter/node_modules
       - volume-nitro-react-node-modules:/app/nitro-react/node_modules
     ports:
-      - 1080:3000
+      - 1080:5154
       - 8080:8080
       - 8081:8081
     networks:
@@ -44,7 +44,7 @@ services:
 
   mysql:
     container_name: mysql
-    image: mariadb:latest
+    image: mariadb:10.6
     command: --default-authentication-plugin=mysql_native_password
     environment:
       - MYSQL_ROOT_PASSWORD=arcturus_root_pw
