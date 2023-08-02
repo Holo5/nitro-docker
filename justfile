@@ -78,7 +78,7 @@ watch-nitro:
 
 # Extract nitro assets from SWF
 extract-nitro-assets:
-  docker exec -it nitro bash -c "cp /app/configuration/nitro-converter/configuration.json /app/nitro-converter/src/configuration.json"
+  docker exec -it nitro bash -c "cp /app/configuration/nitro-converter/configuration.json /app/nitro-converter/configuration.json"
   docker exec -it nitro bash -c "cd /app/nitro-converter; yarn ts-node-dev --transpile-only src/Main.ts"
   docker exec -it nitro bash -c "echo 'Moving assets...'"
   docker exec -it nitro bash -c "rsync -r /app/nitro-converter/assets/* /app/nitro-assets/"
