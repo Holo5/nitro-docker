@@ -1,7 +1,7 @@
 {
     "image.library.notifications.url": "${image.library.url}notifications/%image%.png",
     "achievements.images.url": "${image.library.url}Quests/%image%.png",
-    "camera.url": "https://camera.com",
+    "camera.url": "camera-arcturus-url.com",
     "thumbnails.url": "https://camera.com/thumbnail/%thumbnail%.png",
     "url.prefix": "https://website.com",
     "habbopages.url": "${url.prefix}/",
