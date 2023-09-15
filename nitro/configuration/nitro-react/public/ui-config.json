@@ -37,6 +37,9 @@
             "left": "${asset.url}/images/reception/ts.png",
             "right": "${asset.url}/images/reception/US_right.png",
             "right.repeat": "${asset.url}/images/reception/US_top_right.png"
+        },
+        "holo5-hotel-view": {
+            "spriteSheet": "${asset.url}/others/holo5-hotel-views/normal_hotelview.json"
         }
     },
     "achievements.unseen.ignored": [
