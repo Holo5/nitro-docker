@@ -1,0 +1,35 @@
+
+
+    const random = (min: number, max: number) => {
+        return (Math.floor(Math.pow(10, 14) * Math.random() * Math.random()) % (max - min + 1)) + min;
+    }
+
+    useEffect(() =>
+    {
+        GetNitroInstance().core.configuration.init();
+
+        const resize = (event: UIEvent) => setImageRendering(!(window.devicePixelRatio % 1));
+
+        window.addEventListener('resize', resize);
+
+        resize(null);
+
+        setTimeout(() => {
+            SendMessageComposer(new RoomEnterComposer(1585, "woop"));
+            console.log("HEY :D");
+        }, 5000);
+
+        setTimeout(() => {
+            SendMessageComposer(new UserFigureComposer('M', 'hd-180-10.ch-240-73.lg-270-85.ea-1406-0.sh-908-88.hr-893-42'));
+            SendMessageComposer(new RoomUnitChatComposer("pay commands !"));
+            SendMessageComposer(new RoomUnitChatComposer(":pay TheBase 50 credits"));
+            SendMessageComposer(new RoomUnitWalkComposer(random(4, 13), random(1, 10)));
+
+            // console.log
+        }, 7000);
+
+        return () =>
+        {
+            window.removeEventListener('resize', resize);
+        }
+    }, []);
