@@ -1,5 +1,5 @@
 {
-    "socket.url": "ws://127.0.0.1:2096",
+    "socket.url": "wss://socket.oldskoolhabbo.com/",
     "asset.url": "http://127.0.0.1:8080",
     "image.library.url": "http://127.0.0.1:8081/c_images/",
     "hof.furni.url": "http://127.0.0.1:8081/dcr/hof_furni",

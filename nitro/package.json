@@ -10,6 +10,7 @@
   "workspaces": [
     "nitro-react",
     "nitro-converter",
-    "nitro-renderer"
+    "nitro-renderer",
+    "oldskool-bot"
   ]
 }

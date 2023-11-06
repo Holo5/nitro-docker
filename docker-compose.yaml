@@ -34,7 +34,6 @@ services:
     volumes:
       - ./nitro/:/app/
       - volume-nitro-converter-node-modules:/app/nitro-converter/node_modules
-      - volume-nitro-react-node-modules:/app/nitro-react/node_modules
     ports:
       - 1080:5154
       - 8080:8080
@@ -59,6 +58,13 @@ services:
       - 13306:3306
     networks:
       nitro:
+
+  flaresolverr:
+    image: ghcr.io/flaresolverr/flaresolverr:latest
+    environment:
+      - LOG_LEVEL=info
+    ports:
+      - 8191:8191
 
 networks:
   nitro:
