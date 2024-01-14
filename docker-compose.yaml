@@ -42,6 +42,22 @@ services:
     networks:
       nitro:
 
+  atom:
+    container_name: atom
+    build:
+      context: atom
+    entrypoint: ["/bin/sh","/app/scripts/build.sh"]
+    depends_on:
+      - mysql
+      - nitro
+    volumes:
+      - ./atom/:/app/
+    ports:
+      - 8000:80
+      - 666:666
+    networks:
+      nitro:
+
   mysql:
     container_name: mysql
     image: mariadb:10.6

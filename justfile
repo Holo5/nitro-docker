@@ -10,13 +10,14 @@ install:
 
 # Start Mysql, Arcturus Emulator & Nitro (not in daemon mod)
 start-all:
-  docker-compose up
+  docker-compose up --build
 
 # Close docker containers, remove images and clean volumes
 clean-docker:
   docker-compose down
   docker image rm nitro-docker_arcturus -f
   docker image rm nitro-docker_nitro -f
+  docker image rm nitro-docker-atom -f
   docker volume rm nitro-docker_volume-arcturus-maven-repo
   docker volume rm nitro-docker_volume-arcturus-target
   docker volume rm nitro-docker_volume-mysql
@@ -83,3 +84,16 @@ extract-nitro-assets:
   docker exec -it nitro bash -c "echo 'Moving assets...'"
   docker exec -it nitro bash -c "rsync -r /app/nitro-converter/assets/* /app/nitro-assets/"
   docker exec -it nitro bash -c "echo 'Done !'"
+
+shell-atom:
+  docker exec -it atom bash
+
+# Run migrations for housekeeping, must do after initial setup
+migrate:
+    docker exec -it atom bash -c "cd /app/atom-hk/; php artisan migrate --seed"
+
+update-atom-nitro-path:
+    docker exec -it mysql mariadb -u arcturus_user -parcturus_pw arcturus -e "UPDATE arcturus.website_settings SET value = 'http://localhost:1080' WHERE (\`key\` = 'nitro_path');"
+
+instalation-key:
+    docker exec -it mysql mariadb -u arcturus_user -parcturus_pw arcturus -e "SELECT installation_key FROM arcturus.website_installation;"
