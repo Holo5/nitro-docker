@@ -92,5 +92,5 @@ shell-atom:
 config-atom:
   docker exec -it mysql mariadb -u arcturus_user -parcturus_pw arcturus -e "UPDATE arcturus.website_settings SET value = 'http://localhost:1080' WHERE (\`key\` = 'nitro_path');"
   docker exec -it mysql mariadb -u arcturus_user -parcturus_pw arcturus -e "UPDATE arcturus.website_settings SET value = 'http://localhost:666' WHERE (\`key\` = 'housekeeping_url');"
-  docker exec -it mysql mariadb -u arcturus_user -parcturus_pw arcturus -e "SELECT installation_key FROM arcturus.website_installation;"
   docker exec -it atom bash -c "cd /app/atom-hk/; php artisan migrate --seed"
+  docker exec -it mysql mariadb -u arcturus_user -parcturus_pw arcturus -e "SELECT installation_key FROM arcturus.website_installation;"
