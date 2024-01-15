@@ -93,10 +93,10 @@ shell-atom:
 migrate:
     docker exec -it atom bash -c "cd /app/atom-hk/; php artisan migrate --seed"
 
-# Update nitro client path for atom cms
+# Update nitro client path for atom cms, must do after initial setup
 update-atom-nitro-path:
     docker exec -it mysql mariadb -u arcturus_user -parcturus_pw arcturus -e "UPDATE arcturus.website_settings SET value = 'http://localhost:1080' WHERE (\`key\` = 'nitro_path');"
 
-# The installation key requeride by atom cms in the initial setup
+# The installation key requerided by atom cms in the initial setup
 instalation-key:
     docker exec -it mysql mariadb -u arcturus_user -parcturus_pw arcturus -e "SELECT installation_key FROM arcturus.website_installation;"
