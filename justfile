@@ -76,7 +76,6 @@ shell-nitro:
 watch-nitro:
   docker exec nitro supervisorctl tail -f nitro-dev-server
 
-
 # Extract nitro assets from SWF
 extract-nitro-assets:
   docker exec -it nitro bash -c "cp /app/configuration/nitro-converter/configuration.json /app/nitro-converter/configuration.json"
@@ -89,14 +88,9 @@ extract-nitro-assets:
 shell-atom:
   docker exec -it atom bash
 
-# Run migrations for housekeeping, must do after initial setup
-migrate:
-    docker exec -it atom bash -c "cd /app/atom-hk/; php artisan migrate --seed"
-
-# Update nitro client path for atom cms, must do after initial setup
-update-atom-nitro-path:
-    docker exec -it mysql mariadb -u arcturus_user -parcturus_pw arcturus -e "UPDATE arcturus.website_settings SET value = 'http://localhost:1080' WHERE (\`key\` = 'nitro_path');"
-
-# The installation key requerided by atom cms in the initial setup
-instalation-key:
-    docker exec -it mysql mariadb -u arcturus_user -parcturus_pw arcturus -e "SELECT installation_key FROM arcturus.website_installation;"
+# Update nitro client path, hk path, apply hk migrations and get the installation key required in the initial setup
+config-atom:
+  docker exec -it mysql mariadb -u arcturus_user -parcturus_pw arcturus -e "UPDATE arcturus.website_settings SET value = 'http://localhost:1080' WHERE (\`key\` = 'nitro_path');"
+  docker exec -it mysql mariadb -u arcturus_user -parcturus_pw arcturus -e "UPDATE arcturus.website_settings SET value = 'http://localhost:666' WHERE (\`key\` = 'housekeeping_url');"
+  docker exec -it mysql mariadb -u arcturus_user -parcturus_pw arcturus -e "SELECT installation_key FROM arcturus.website_installation;"
+  docker exec -it atom bash -c "cd /app/atom-hk/; php artisan migrate --seed"
