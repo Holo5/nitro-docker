@@ -75,11 +75,11 @@ async function openBot(sso) {
     // Set screen size
     await page.setViewport({width: 1376, height: 894});
 
-    await page.waitForTimeout(4000);
+    await page.waitForTimeout(2000);
 
     setTimeout(() => {
         page.close();
-    }, 20000);
+    }, 8000);
 }
 
 function login(username, password) {
@@ -179,25 +179,34 @@ async function delay(delay) {
 
 
 async function runRegistration() {
-    const names = Array(15).fill(null).map(v => faker.person.lastName());
+    console.log("Starting session :)");
+
+    await startSession();
+
+    console.log("Retrieving accounts");
+    const names = Array(30).fill(null).map(v => faker.person.lastName() + '-TD');
 
     for(let i = 0; i < names.length; i++) {
         await registerAndConnect(names[i]);
     }
 
-    await browser.close();
+    await delay(3000);
+    await destroySession();
+
+    // await browser.close();
 }
 
 async function runLogin() {
     console.log("Starting session :)");
 
+    await destroySession();
     await startSession();
 
     console.log("Retrieving accounts");
     const names = await readAllLogins();
 
     console.log("Retrieved some accounts: ", names.length);
-    for(let i = 0; i < names.length; i++) {
+    for(let i = 168; i < names.length; i++) {
         console.log("Account", i + 1, "on", names.length + 1)
         await loginAndConnect(names[i]);
     }
@@ -210,3 +219,4 @@ async function runLogin() {
 
 
 runLogin();
+// runRegistration();
