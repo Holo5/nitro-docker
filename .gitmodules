@@ -13,3 +13,9 @@
 [submodule "nitro/nitro-assets"]
 	path = nitro/nitro-assets
 	url = https://git.krews.org/nitro/default-assets.git
+[submodule "atom/atom"]
+	path = atom/atom
+	url = https://github.com/ObjectRetros/atomcms.git
+[submodule "atom/atom-hk"]
+	path = atom/atom-hk
+	url = https://github.com/ObjectRetros/atomhk.git
