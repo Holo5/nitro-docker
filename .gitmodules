@@ -15,4 +15,4 @@
 	url = https://git.krews.org/nitro/default-assets.git
 [submodule "nitro/nitro-renderer"]
 	path = nitro/nitro-renderer
-	url = https://github.com/billsonnn/nitro-renderer
+	url = git@github.com:billsonnn/nitro-renderer.git
