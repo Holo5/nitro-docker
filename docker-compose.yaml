@@ -43,6 +43,18 @@ services:
     networks:
       nitro:
 
+  orion:
+    container_name: orion
+    build:
+      context: cms
+    entrypoint: ["/bin/sh","/app/scripts/build.sh"]
+    volumes:
+      - ./cms/:/app/
+    ports:
+      - 2080:2080
+    networks:
+      nitro:
+
   mysql:
     container_name: mysql
     image: mariadb:10.6
