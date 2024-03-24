@@ -6,6 +6,7 @@ volumes:
   volume-arcturus-target:
   volume-nitro-converter-node-modules:
   volume-nitro-react-node-modules:
+  volume-orion-cms-vendor:
 
 services:
   arcturus:
@@ -47,9 +48,10 @@ services:
     container_name: orion
     build:
       context: cms
-    entrypoint: ["/bin/sh","/app/scripts/build.sh"]
+    entrypoint: ["/bin/bash","/usr/src/scripts/build.sh"]
     volumes:
-      - ./cms/:/app/
+      - ./cms/:/usr/src/
+      - volume-orion-cms-vendor:/app/orion-cms/vendor
     ports:
       - 2080:2080
     networks:
