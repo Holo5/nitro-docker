@@ -16,3 +16,9 @@
 [submodule "nitro/nitro-renderer"]
 	path = nitro/nitro-renderer
 	url = git@github.com:billsonnn/nitro-renderer.git
+[submodule "nitro/shockwave-ui"]
+	path = nitro/shockwave-ui
+	url = git@github.com:Verbid/NitroShockWaveUI.git
+[submodule "nitro/orion-cms"]
+	path = nitro/orion-cms
+	url = git@github.com:Verbid/OrionCMS-HREDITION.git

@@ -75,6 +75,28 @@ shell-nitro:
 watch-nitro:
   docker exec nitro supervisorctl tail -f nitro-dev-server
 
+# Restart Nitro dev server
+restart-shockwave:
+  docker exec nitro supervisorctl stop shockwave-dev-server
+  docker exec nitro bash -c "cp /app/configuration/nitro-react/public/* /app/shockwave-ui/public/"
+  docker exec nitro supervisorctl start shockwave-dev-server
+
+# Stop Nitro Dev Server
+stop-shockwave:
+  docker exec nitro supervisorctl stop shockwave-dev-server
+
+# Start Nitro Dev Server
+start-shockwave:
+  docker exec nitro supervisorctl start shockwave-dev-server
+
+# Enter in the Nitro's shell
+shell-shockwave:
+  docker exec -it nitro bash
+
+# Watch Nitro dev server's output
+watch-shockwave:
+  docker exec nitro supervisorctl tail -f shockwave-dev-server
+
 
 # Extract nitro assets from SWF
 extract-nitro-assets:

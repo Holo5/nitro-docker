@@ -8,5 +8,6 @@ cd /app/; yarn install;
 supervisorctl start swf-http-server
 supervisorctl start assets-http-server
 supervisorctl start nitro-dev-server
+supervisorctl start shockwave-dev-server
 
 tail -f /dev/null

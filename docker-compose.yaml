@@ -37,6 +37,7 @@ services:
       - volume-nitro-react-node-modules:/app/nitro-react/node_modules
     ports:
       - 1080:5154
+      - 1081:5155
       - 8080:8080
       - 8081:8081
     networks:
