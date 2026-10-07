@@ -30,7 +30,7 @@ Mysql server use these credentials:
       - MYSQL_PASSWORD=arcturus_pw
       - MYSQL_DATABASE=arcturus
 ```
-The first database come from mysql/dumps, it's the base Arcturus database for 3.0.X with just a default SSO ticket (123).
+The first database come from mysql/dumps, it's the base Arcturus database for 3.0.X with just a default SSO ticket (123), followed by the migrations up to 3.5.5. These files only run on an empty database: for an existing one, apply new migrations with `just migrate-db <file>`.
 
 ### Arcturus
 - Arcturus is stored in emulator/arcturus, it's just a submodule from krews.git. Each time you run the nitro-arcturus image, each time the emulator is recompiled. You can recompile manualy with the command `just recompile-arcturus`.

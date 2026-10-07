@@ -27,6 +27,10 @@ clean-docker:
 mysql:
   docker exec -it arcturus bash -c "mysql -h mysql -u arcturus_user -parcturus_pw arcturus"
 
+# Apply a SQL file from mysql/dumps on an existing database (ex: just migrate-db arcturus_migration_3.5.4_to_3.5.5.sql)
+migrate-db file:
+  docker exec mysql sh -c "mariadb -uroot -parcturus_root_pw arcturus < '/docker-entrypoint-initdb.d/{{file}}'"
+
 # Restart Arcturus Emulator
 restart-arcturus:
   docker exec arcturus supervisorctl restart arcturus-emulator
