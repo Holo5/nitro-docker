@@ -10,18 +10,18 @@ install:
 
 # Start Mysql, Arcturus Emulator & Nitro (not in daemon mod)
 start-all:
-  docker-compose up
+  docker compose up
 
 # Close docker containers, remove images and clean volumes
 clean-docker:
-  docker-compose down
-  docker image rm nitro-docker_arcturus -f
-  docker image rm nitro-docker_nitro -f
-  docker volume rm nitro-docker_volume-arcturus-maven-repo
-  docker volume rm nitro-docker_volume-arcturus-target
-  docker volume rm nitro-docker_volume-mysql
-  docker volume rm nitro-docker_volume-nitro-converter-node-modules
-  docker volume rm nitro-docker_volume-nitro-react-node-modules
+  docker compose down
+  -docker image rm -f nitro-docker-arcturus
+  -docker image rm -f nitro-docker-nitro
+  -docker volume rm nitro-docker_volume-arcturus-maven-repo
+  -docker volume rm nitro-docker_volume-arcturus-target
+  -docker volume rm nitro-docker_volume-mysql
+  -docker volume rm nitro-docker_volume-nitro-converter-node-modules
+  -docker volume rm nitro-docker_volume-nitro-react-node-modules
 
 # Open the MySQL console
 mysql:

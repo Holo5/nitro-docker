@@ -1,0 +1,9 @@
+# Files mounted into Linux containers must keep LF endings on every OS (Windows autocrlf breaks them)
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.jar binary
+*.png binary
+*.swf binary
+*.nitro binary
