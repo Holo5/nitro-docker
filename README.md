@@ -1,4 +1,4 @@
-# Nitro Docker (2026 !)
+## Nitro Docker (Octobrer 2026)
 Nitro docker is a quick-to-setup docker dev environment. It can be run on Windows, Linux or OSX just with a few commands
 
 # Installation
